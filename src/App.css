@@ -17,6 +17,10 @@
   align-items: center;
 }
 
+.mb-max {
+  margin-bottom: 120px;
+}
+
 .App-header-subtitle {
   font-size: 32px;
   margin-bottom: 34px;
@@ -45,8 +49,86 @@
   font-weight: bold;
 }
 
+.container {
+  width: 90%;
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
+.picture-section {
+  display: flex;
+  width: 100%;
+}
+
+.text-background {
+  background-color: #CB4581;
+  padding: 30px 40px 50px 40px;
+  margin-left: -70px;
+  height: 100%;
+  width: 40%;
+  margin-top: 40px;
+  text-align: left;
+  color: #fff;
+}
+
+.reverse .text-background {
+  margin-left: 0px;
+  margin-right: -70px;
+  z-index: 9;
+}
+
+.link {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.section-text {
+  font-size: 21px;
+}
+
+.picture {
+  width: 60%;
+  height: 100%;
+}
+
 .App-link {
   color: #61dafb;
+}
+
+@media screen and (max-width: 1072px) {
+  .picture {
+    width: 50%;
+  }
+  .text-background {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .picture {
+    width: 100%;
+  }
+  .text-background {
+    width: 80%;
+    margin: 0 auto;
+    top: -40px;
+    position: relative;
+  }
+  .reverse .text-background {
+    order: 2;
+    margin: 0 auto;
+  }
+  .picture-section {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 690px) {
@@ -56,6 +138,18 @@
   .App-time {
     font-size: 24px;
     font-weight: bold;
+  }
+  .text-background {
+    width: 70%;
+  }
+  .section-title {
+    font-size: 32px;
+  }
+  .section-text {
+    font-size: 18px;
+  }
+  .mb-max {
+    margin-bottom: 80px;
   }
   .App-header-subtitle {
     font-size: 20px;
@@ -67,5 +161,6 @@
   }
   .App-header {
     height: 400px;
+    margin: 40px auto 80px auto;
   }
 }
