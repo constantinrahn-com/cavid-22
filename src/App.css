@@ -71,6 +71,61 @@
   color: #fff;
 }
 
+.footer {
+  margin-bottom: 40px;
+}
+
+.footer__link {
+  appearance: none;
+  border: none;
+  background: none;
+  font-family: 'PT Sans', sans-serif;
+  color: #fff;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+.dialog {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,.5);
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  padding: 0;
+  display: block;
+}
+
+.dialog-background {
+  width: 60%;
+  height: 80vh;
+  background: #fff;
+  border-radius: 8px;
+  margin: 10vh auto;
+  overflow: scroll;
+  font-size: 18px;
+  text-align: left;
+  padding: 24px 32px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.button-close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  appearance: none;
+  background: none;
+  border: none;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+}
+
 .reverse .text-background {
   margin-left: 0px;
   margin-right: -70px;
@@ -245,5 +300,9 @@
   .App-header {
     height: 400px;
     margin: 40px auto 80px auto;
+  }
+  .dialog-background {
+    width: 90vw;
+    height: 80vh;
   }
 }
