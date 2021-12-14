@@ -215,18 +215,21 @@
   .section-text {
     font-size: 18px;
   }
+  .benefit__title {
+    font-size: 32px;
+  }
   .benefit__picture {
     height: 140px;
-    min-width: 130px;
+    min-width: 110px;
   }
   .benefit__food {
-    height: 60px;
+    height: 50px;
   }
   .benefit__gift {
-    height: 70px;
+    height: 60px;
   }
   .benefit__drinks {
-    height: 90px;
+    height: 80px;
   }
   .mb-max {
     margin-bottom: 80px;
