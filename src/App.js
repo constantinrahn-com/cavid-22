@@ -1,5 +1,9 @@
 import React from 'react';
 import headerbackground from './cavid-wedding-main.png';
+import secondbackground from './cavid-wedding-second.png';
+import gift from './gift.png';
+import drinks from './drinks.png';
+import food from './food.png';
 import party from './party.jpg';
 import location from './location.jpg';
 import Countdown from 'react-countdown';
@@ -57,6 +61,36 @@ function App() {
           </div>
           <img className="picture" src={location} alt="VON GREIFSWALD"/>
         </section>
+        <section className="benefits mb-max">
+          <div className="benefit">
+            <div className="benefit__picture">
+              <img className="benefit__gift" src={gift} alt="Ihr seid das beste Geschenk!"/>
+            </div>
+            <div className="benefit__description">
+              <h3 className="benefit__title">Geschenke</h3>
+              <p className="benefit__text">Eine Unterstützung des Brautpaares in Form von Scheinen für die Flitterwochen ist sehr gern gesehen. Keine Blumen! Danke.</p>
+            </div>
+          </div>
+          <div className="benefit">
+            <div className="benefit__picture">
+              <img className="benefit__drinks" src={drinks} alt="Ihr seid das beste Geschenk!"/>
+            </div>
+            <div className="benefit__description">
+              <h3 className="benefit__title">Getränke</h3>
+              <p className="benefit__text">Getränke gibt es in Hülle und Fülle. Wir haben für alles vorgesorgt und es wir niemand durstig nach Hause gehen.</p>
+            </div>
+          </div>
+          <div className="benefit">
+            <div className="benefit__picture">
+              <img className="benefit__food" src={food} alt="Ihr seid das beste Geschenk!"/>
+            </div>
+            <div className="benefit__description">
+              <h3 className="benefit__title">Essen</h3>
+              <p className="benefit__text">Wir werden alle Dinge bestmöglich berücksichtigen und mit der Küche abstimmen. Bitte gib uns zeitnah alle wichtigen Informationen dazu.</p>
+            </div>
+          </div>
+        </section>
+        <img src={secondbackground} alt="Bis bald!" className="end-picture mb-max"/>
       </main>
     </div>
   );

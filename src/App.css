@@ -103,6 +103,46 @@
   color: #61dafb;
 }
 
+.benefits {
+  display: flex;
+  gap: 60px;
+  color: #fff;
+}
+.benefit__picture {
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 0px;
+}
+.benefit__gift {
+  height: 116px;
+  align-self: center;
+}
+.benefit__drinks {
+  height: 140px;
+  align-self: center;
+}
+.benefit {
+  width: 30%;
+}
+.benefit__food {
+  height: 125px;
+  align-self: center;
+}
+.benefit__title {
+  font-size: 48px;
+  font-weight: bold;
+}
+.benefit__text {
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 12px;
+}
+.end-picture {
+  width: 50%;
+}
+
 @media screen and (max-width: 1072px) {
   .picture {
     width: 50%;
@@ -115,6 +155,33 @@
 @media screen and (max-width: 850px) {
   .picture {
     width: 100%;
+  }
+  .benefits {
+    flex-wrap: wrap;
+  }
+  .benefit {
+    width: 100%;
+    display: flex;
+  }
+  .benefit__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    text-align: left;
+  }
+  .benefit__picture {
+    height: 140px;
+    min-width: 200px;
+  }
+  .benefit__food {
+    height: 80px;
+  }
+  .benefit__gift {
+    height: 90px;
+  }
+  .benefit__drinks {
+    height: 110px;
   }
   .text-background {
     width: 80%;
@@ -147,6 +214,19 @@
   }
   .section-text {
     font-size: 18px;
+  }
+  .benefit__picture {
+    height: 140px;
+    min-width: 130px;
+  }
+  .benefit__food {
+    height: 60px;
+  }
+  .benefit__gift {
+    height: 70px;
+  }
+  .benefit__drinks {
+    height: 90px;
   }
   .mb-max {
     margin-bottom: 80px;
