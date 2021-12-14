@@ -2,22 +2,70 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-header {
+  color: #fff;
+  height: 657px;
+  width: 90%;
+  max-width: 667px;
+  margin: 60px auto;
+  background-size: contain;
+  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #e62486;
-  min-height: 100vh;
+.App-header-subtitle {
+  font-size: 32px;
+  margin-bottom: 34px;
+}
+
+.App-header-title {
+  font-size: 84px;
+  font-weight: bold;
+}
+
+.App-countdown {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+  max-width: 400px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+}
+
+.App-time-text {
+  font-size: 32px;
+}
+
+.App-time {
+  font-size: 48px;
+  font-weight: bold;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+@media screen and (max-width: 690px) {
+  .App-time-text {
+    font-size: 22px;
+  }
+  .App-time {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .App-header-subtitle {
+    font-size: 20px;
+    margin-bottom: 34px;
+  }
+  .App-header-title {
+    font-size: 44px;
+    font-weight: bold;
+  }
+  .App-header {
+    height: 400px;
+  }
 }
