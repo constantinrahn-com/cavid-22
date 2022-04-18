@@ -109,7 +109,7 @@ function App() {
             </div>
             <div className="benefit__description">
               <h3 className="benefit__title">Getränke</h3>
-              <p className="benefit__text">Getränke gibt es in Hülle und Fülle. Wir haben für alles vorgesorgt und es wir niemand durstig nach Hause gehen.</p>
+              <p className="benefit__text">Getränke gibt es in Hülle und Fülle. Wir haben für alles vorgesorgt und es wird niemand durstig nach Hause gehen.</p>
             </div>
           </div>
           <div className="benefit">
