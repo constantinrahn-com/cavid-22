@@ -95,7 +95,7 @@ function App() {
         <h2 className="section-title text--white">Die Bilder zum Tag</h2>
         <p className="section-text text--white text--margin">Klicke auf eines der Bilder und gelange direkt zur Galerie!</p>
         <section className="benefits mb-max">
-          <a href="https://cavid-22.pixieset.com/cavid-22day/" target="_blank" className="benefit">
+          <a href="https://cavid-22.pixieset.com/cavid-22day/" target="_blank" rel="noopener noreferrer" className="benefit">
             <div className="benefit__picture">
               <img src={galleryday} alt="Bildergalerie bei Tag"/>
             </div>
@@ -103,7 +103,7 @@ function App() {
               <h3 className="benefit__title">Der Tag</h3>
             </div>
           </a>
-          <a href="https://cavid-22.pixieset.com/cavid-22night/" target="_blank" className="benefit">
+          <a href="https://cavid-22.pixieset.com/cavid-22night/" target="_blank" rel="noopener noreferrer" className="benefit">
             <div className="benefit__picture">
               <img src={gallerynight} alt="Bildergalerie bei Nacht"/>
             </div>
@@ -111,7 +111,7 @@ function App() {
               <h3 className="benefit__title">Die Nacht</h3>
             </div>
           </a>
-          <a href="https://cavid-22.pixieset.com/cavid-22fotobox/" target="_blank" className="benefit">
+          <a href="https://cavid-22.pixieset.com/cavid-22fotobox/" target="_blank" rel="noopener noreferrer" className="benefit">
             <div className="benefit__picture">
               <img src={galleryfotobox} alt="Alle Bilder aus der Fotobox"/>
             </div>
