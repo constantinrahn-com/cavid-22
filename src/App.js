@@ -1,9 +1,9 @@
 import React from 'react';
 import headerbackground from './cavid-wedding-main.png';
 import secondbackground from './cavid-wedding-second.png';
-import gift from './gift.png';
-import drinks from './drinks.png';
-import food from './food.png';
+import galleryday from './cavid-gallery-day.jpeg';
+import gallerynight from './cavid-gallery-night.jpeg';
+import galleryfotobox from './cavid-gallery-fotobox.jpeg';
 import party from './party.jpg';
 import location from './location.jpg';
 import Countdown from 'react-countdown';
@@ -87,40 +87,38 @@ function App() {
             <h2 className="section-title">VON GREIFSWALD</h2>
             <p className="section-text">Lilli-Henoch-Straße 10<br/>
             10405 Berlin<br/><br/>
-            <a href="https://goo.gl/maps/AJ3czr7pQxbU8Pki7" className="link">Hier ein Link zu Google Maps</a><br/>
-            <a href="mailto:reservations.berlin@leonardo-hotels.com" className="link">Reserviere hier ein Hotelzimmer</a>
+            <a href="https://goo.gl/maps/AJ3czr7pQxbU8Pki7" className="link">Hier ein Link zu Google Maps</a>
             </p>
           </div>
           <img className="picture" src={location} alt="VON GREIFSWALD"/>
         </section>
+        <h2 className="section-title text--white">Die Bilder zum Tag</h2>
+        <p className="section-text text--white text--margin">Klicke auf eines der Bilder und gelange direkt zur Galerie!</p>
         <section className="benefits mb-max">
-          <div className="benefit">
+          <a href="https://cavid-22.pixieset.com/cavid-22day/" target="_blank" className="benefit">
             <div className="benefit__picture">
-              <img className="benefit__gift" src={gift} alt="Ihr seid das beste Geschenk!"/>
+              <img src={galleryday} alt="Bildergalerie bei Tag"/>
             </div>
             <div className="benefit__description">
-              <h3 className="benefit__title">Geschenke</h3>
-              <p className="benefit__text">Eine Unterstützung des Brautpaares in Form von Scheinen für die Flitterwochen ist sehr gern gesehen. Keine Blumen! Danke.</p>
+              <h3 className="benefit__title">Der Tag</h3>
             </div>
-          </div>
-          <div className="benefit">
+          </a>
+          <a href="https://cavid-22.pixieset.com/cavid-22night/" target="_blank" className="benefit">
             <div className="benefit__picture">
-              <img className="benefit__drinks" src={drinks} alt="Ihr seid das beste Geschenk!"/>
+              <img src={gallerynight} alt="Bildergalerie bei Nacht"/>
             </div>
             <div className="benefit__description">
-              <h3 className="benefit__title">Getränke</h3>
-              <p className="benefit__text">Getränke gibt es in Hülle und Fülle. Wir haben für alles vorgesorgt und es wird niemand durstig nach Hause gehen.</p>
+              <h3 className="benefit__title">Die Nacht</h3>
             </div>
-          </div>
-          <div className="benefit">
+          </a>
+          <a href="https://cavid-22.pixieset.com/cavid-22fotobox/" target="_blank" className="benefit">
             <div className="benefit__picture">
-              <img className="benefit__food" src={food} alt="Ihr seid das beste Geschenk!"/>
+              <img src={galleryfotobox} alt="Alle Bilder aus der Fotobox"/>
             </div>
             <div className="benefit__description">
-              <h3 className="benefit__title">Essen</h3>
-              <p className="benefit__text">Wir werden alle Dinge bestmöglich berücksichtigen und mit der Küche abstimmen. Bitte gib uns zeitnah alle wichtigen Informationen dazu.</p>
+              <h3 className="benefit__title">Fotobox</h3>
             </div>
-          </div>
+          </a>
         </section>
         <img src={secondbackground} alt="Bis bald!" className="end-picture mb-max"/>
       </main>
